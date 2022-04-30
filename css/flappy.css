@@ -1,0 +1,65 @@
+[wm-flappy]{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: solid 1px black;
+    background-color: skyblue;
+    overflow: hidden;
+}
+
+.pipe {
+    position: relative;
+    height: 500px;
+    width: 50px;
+    background-color: lime;
+    left: 800px;
+    animation: pipe 2s linear infinite;
+}
+
+@keyframes pipe {
+    0%{left: 800px;}
+    100%{left: -50px;}
+}
+@keyframes marisad {
+    0%{left: 800px;}
+    100%{left: -150px;}
+}
+
+.hole {
+    position: relative;
+    height: 150px;
+    width: 50px;
+    top: -500px;
+    background-color: skyblue;
+    animation: pipe 2s linear infinite;
+}
+
+.bird {
+    position: absolute;
+    width: 40px;
+    height: 16px;
+    top: 100px;
+    margin: 5px;
+}
+
+.bird img {
+    width: inherit;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 710px;
+    font-size: 1.5em;
+}
+
+.marisa {
+    position: absolute;
+    width: 100px;
+    top: 2px;
+    animation: marisad 9s linear infinite;
+}
+
+.marisa img{
+    width: inherit;
+}
